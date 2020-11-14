@@ -1,6 +1,6 @@
-package com.jgeek.coronavirustracker.services;
+package com.jc.coronavirustracker.services;
 
-import com.jgeek.coronavirustracker.models.LocationStats;
+import com.jc.coronavirustracker.models.LocationStats;
 import java.io.IOException;
 import java.io.StringReader;
 import java.net.URI;

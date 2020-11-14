@@ -1,4 +1,4 @@
-package com.jgeek.coronavirustracker.models;
+package com.jc.coronavirustracker.models;
 
 public class LocationStats {
     private String state;

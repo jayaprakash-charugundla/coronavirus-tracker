@@ -1,7 +1,7 @@
-package com.jgeek.coronavirustracker.controllers;
+package com.jc.coronavirustracker.controllers;
 
-import com.jgeek.coronavirustracker.models.LocationStats;
-import com.jgeek.coronavirustracker.services.CoronaVirusDataService;
+import com.jc.coronavirustracker.models.LocationStats;
+import com.jc.coronavirustracker.services.CoronaVirusDataService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
