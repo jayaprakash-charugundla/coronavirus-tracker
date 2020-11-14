@@ -18,10 +18,14 @@ public class HomeController {
     public String home(Model model) {
         List<LocationStats> allStats = coronaVirusDataService.getAllStats();
         int totalReportedCases = allStats.stream().mapToInt(LocationStats::getLatestTotalCases).sum();
+        long countries = allStats.stream().map(LocationStats::getCountry).distinct().count();
+        /*long indiaCases = allStats.stream()
+            .filter(locationStats -> locationStats.getCountry().equals("India")).count();*/
         int totalNewCases = allStats.stream().mapToInt(LocationStats::getDiffFromPrevDay).sum();
         model.addAttribute("locationStats", allStats);
         model.addAttribute("totalReportedCases", totalReportedCases);
         model.addAttribute("totalNewCases", totalNewCases);
+        model.addAttribute("countries", countries);
         return "home";
     }
 }
